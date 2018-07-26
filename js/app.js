@@ -2,72 +2,53 @@
   07/22/18
 
 
-*/
-
-
 /*
 
-Button to clear
-grid of squares
-
 */
-let catImg= document.getElementsByClassName('cat');
-let countClicks=document.querySelector('.clicks');
-let clicked=0;
-let catsName=document.querySelector('.catName');
-let cats={
-  names:["javi1", "javi2"]
-
+let catImg = document.getElementsByClassName('cat');
+let countClicks = document.querySelector('.clicks');
+let clicked = 0;
+let catsName = document.querySelector('.catName');
+let cats = {
+    names: ["Lion", "Puma", "Tiger", "Cheetah", "Panther"]
+    // imgSrc=['c1.jpg','c2.jpg']
 
 };
 
-// for (name of cats.names ){
-
-// catsName.innerText=cats.names[name];
-
-// +=1;
-
-// }
-
-
-// console.log(cats[0].names);
 
 
 
-let catImages=[...catImg];
 
 
-for(let img of catImg){
-  img.addEventListener("click",  ()=> {
-   clicked+=1;
-   // if (catImg)
-  countClicks.innerText="You clicked the cat "+clicked;
- 
-});
+for (let i = 0; i < cats.names.length; i++) {
+    let catNameList = document.getElementById('catsNameList');
+    let names = cats.names[i];
+    let list = document.createElement('li');
+    list.textContent = names;
 
+    catNameList.appendChild(list);
+
+    list.addEventListener('click', ((cat) => {
+        return () => {
+
+            catsName.innerText = `${cat}`;
+
+
+        };
+
+    })(names));
 
 
 }
 
 
-// function makeGrid() {
-//   const inputHeight = $('#inputHeight').val();
-//   const inputWidth = $('#inputWidth').val();
-
-//   for (let rows = 1; rows <= inputHeight; ++rows) {
-//     $('#pixelCanvas').append($('<tr></tr>'));
-//     for (let columns = 1; columns <= inputWidth; ++columns) {
-//       $('tr').last().append($('<td></td>'));
-//     }
-//   }
-// }
+let catImages = [...catImg];
 
 
-
-
-
-
-
-
-/*To choose color to fill quares*/
-
+for (let img of catImg) {
+    img.addEventListener("click", () => {
+        clicked += 1;
+        // if (catImg)
+        countClicks.innerText = "You clicked the cat " + clicked;
+    });
+}

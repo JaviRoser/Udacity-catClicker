@@ -1,21 +1,19 @@
 body,
 html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
-  font-family: Monoton;
-  font-size: 70px;
-  margin: 0.2em;
-  font-weight: 600 !important;
-  color: #bad7df;
-  text-align: center;
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+    font-weight: 600 !important;
+    color: #bad7df;
+    text-align: center;
 }
-
-
 
 /*
  Main Title
@@ -23,9 +21,10 @@ h1 {
 */
 
 .jumbotron {
-  background-color: #f6f6f6;
-  margin: 0;
+    background-color: #f6f6f6;
+    margin: 0;
 }
+
 
 
 /*
@@ -33,13 +32,34 @@ Background
 */
 
 .background {
-  background-color: #99ddcc;
+    background-color: #99ddcc;
 }
 
 
-/*  */
+/*Cat Name list*/
 
-.clicks{
-  font-size: 2em;
-  font-weight: 700;
+#catsNameList{
+  padding: 2.5em 0.5em 0.4em 0.5em;
+
+}
+ul {
+    list-style-type: none;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+
+/*Cats Name on the photo*/
+
+.catName {
+    font-size: 4em;
+    font-weight: 900;
+    color:#f6f6f6;
+    padding: 0 2em 0 2em 0;
+}
+
+
+.clicks {
+    font-size: 2em;
+    font-weight: 700;
 }
