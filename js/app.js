@@ -45,9 +45,6 @@ let cats = {
 };
 
 
-
-
-
 for (let i = 0; i < cats.attributes.length; i++) {
     let catNameList = document.getElementById('catsNameList');
     let names = cats.attributes[i].name;
@@ -59,21 +56,17 @@ for (let i = 0; i < cats.attributes.length; i++) {
     catNameList.appendChild(list);
     list.addEventListener('click', ((cat) => {
         return () => {
-            catsName.innerHTML = `<img class="cat" src="${imgInput}"`;
             catsName.innerText = `${cat}`;
+            catsName.innerHTML = `<img class="cat" src="${imgInput}"`;
+            console.log(`${cat}`);
             console.log(catsName.innerHTML = `<img class="cat" src="${imgInput}"`);
-
-
-        };
+        }
 
     })(names));
 
-
 };
 
-
 let catImages = [...catImg];
-
 
 for (let img of catImg) {
     img.addEventListener("click", () => {
