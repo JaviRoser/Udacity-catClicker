@@ -58,8 +58,8 @@ for (let i = 0; i < cats.attributes.length; i++) {
         return () => {
             catsName.innerText = `${cat}`;
             catsName.innerHTML = `<img class="cat" src="${imgInput}"`;
-            console.log(`${cat}`);
-            console.log(catsName.innerHTML = `<img class="cat" src="${imgInput}"`);
+            // console.log(`${cat}`);
+            // console.log(catsName.innerHTML = `<img class="cat" src="${imgInput}"`);
         }
 
     })(names));
