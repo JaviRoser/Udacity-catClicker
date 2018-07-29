@@ -66,12 +66,12 @@ for (let i = 0; i < cats.attributes.length; i++) {
 
 };
 
-let catImages = [...catImg];
+// let catImages = [...catImg];
 
-for (let img of catImg) {
-    img.addEventListener("click", () => {
-        clicked += 1;
-        // if (catImg)
-        countClicks.innerText = "You clicked the cat " + clicked;
-    });
-}
+// for (let img of catImg) {
+//     img.addEventListener("click", () => {
+//         clicked += 1;
+//         // if (catImg)
+//         countClicks.innerText = "You clicked the cat " + clicked;
+//     });
+// }
