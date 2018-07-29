@@ -5,7 +5,7 @@
 /*
 
 // */
-let catImg = document.getElementsByClassName('cat');
+// let catImg = document.getElementsByClassName('cat');
 let countClicks = document.querySelector('.clicks');
 let clicked = 0;
 let catsName = document.querySelector('.catName');
@@ -59,11 +59,10 @@ for (let i = 0; i < cats.attributes.length; i++) {
     catNameList.appendChild(list);
     list.addEventListener('click', ((cat) => {
         return () => {
-            catsName.innerHTML = `<img class="cat" src="${imgInput}"`;
+
             catsName.innerText = `${cat}`;
-            console.log(catsName.innerHTML = `<img class="cat" src="${imgInput}"`);
 
-
+            catsName.innerHTML = `<img class="cat" src="${imgInput}">`;
         };
 
     })(names));
@@ -72,13 +71,13 @@ for (let i = 0; i < cats.attributes.length; i++) {
 };
 
 
-let catImages = [...catImg];
+// let catImages = [...catImg];
 
 
-for (let img of catImg) {
-    img.addEventListener("click", () => {
-        clicked += 1;
-        // if (catImg)
-        countClicks.innerText = "You clicked the cat " + clicked;
-    });
-}
+// for (let img of catImg) {
+//     img.addEventListener("click", () => {
+//         clicked += 1;
+//         // if (catImg)
+//         countClicks.innerText = "You clicked the cat " + clicked;
+//     });
+// }
