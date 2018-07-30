@@ -46,6 +46,10 @@ ul {
     font-size: 3em;
     font-weight: 500;
 }
+li:hover{
+    color:white;
+    cursor: pointer;
+}
 
 /*Cats Name on the photo*/
 
@@ -54,10 +58,23 @@ ul {
     font-weight: 900;
     color:#f6f6f6;
     padding: 0 2em 0 2em 0;
+    text-align: center;
 }
+
+/*cat image*/
+
+img{
+
+text-align: center;
+
+}
+
+
+
 
 
 .clicks {
     font-size: 2em;
     font-weight: 700;
 }
+

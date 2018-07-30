@@ -1,14 +1,13 @@
 /*Cat Clicker Project
   07/22/18
 
-
-/*
-
-// */
+ */
+let catsName = document.querySelector('.catName');
 let catImg = document.getElementsByClassName('cat');
 let countClicks = document.querySelector('.clicks');
 let clicked = 0;
-let catsName = document.querySelector('.catName');
+let catImages = [...catImg];
+
 // let imgSrcHTML = document.querySelector('.cat');
 let cats = {
     attributes: [{
@@ -44,7 +43,15 @@ let cats = {
 
 };
 
+<<<<<<< HEAD
 
+||||||| merged common ancestors
+
+
+
+
+=======
+>>>>>>> imgChange
 for (let i = 0; i < cats.attributes.length; i++) {
     let catNameList = document.getElementById('catsNameList');
     let names = cats.attributes[i].name;
@@ -56,18 +63,39 @@ for (let i = 0; i < cats.attributes.length; i++) {
     catNameList.appendChild(list);
     list.addEventListener('click', ((cat) => {
         return () => {
+<<<<<<< HEAD
             catsName.innerText = `${cat}`;
             catsName.innerHTML = `<img class="cat" src="${imgInput}"`;
             // console.log(`${cat}`);
             // console.log(catsName.innerHTML = `<img class="cat" src="${imgInput}"`);
         }
 
-    })(names));
+||||||| merged common ancestors
+            catsName.innerHTML = `<img class="cat" src="${imgInput}"`;
+            catsName.innerText = `${cat}`;
+            console.log(catsName.innerHTML = `<img class="cat" src="${imgInput}"`);
 
+
+        };
+
+=======
+            catsName.innerHTML = ` <p class="catsImgName">${cat}</p>
+            <img class="cat" src="${imgInput}">`;
+        };
+>>>>>>> imgChange
+    })(names));
+<<<<<<< HEAD
+
+||||||| merged common ancestors
+
+
+=======
+>>>>>>> imgChange
 };
 
 // let catImages = [...catImg];
 
+<<<<<<< HEAD
 // for (let img of catImg) {
 //     img.addEventListener("click", () => {
 //         clicked += 1;
@@ -75,3 +103,25 @@ for (let i = 0; i < cats.attributes.length; i++) {
 //         countClicks.innerText = "You clicked the cat " + clicked;
 //     });
 // }
+||||||| merged common ancestors
+let catImages = [...catImg];
+
+
+for (let img of catImg) {
+    img.addEventListener("click", () => {
+        clicked += 1;
+        // if (catImg)
+        countClicks.innerText = "You clicked the cat " + clicked;
+    });
+}
+=======
+
+
+for (let img of catImg) {
+    img.addEventListener("click", () => {
+        clicked += 1;
+        // if (catImg)
+        countClicks.innerText = "You clicked the cat " + clicked;
+    });
+}
+>>>>>>> imgChange
