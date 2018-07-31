@@ -15,6 +15,7 @@ h1 {
     text-align: center;
 }
 
+
 /*
  Main Title
 
@@ -26,49 +27,56 @@ h1 {
 }
 
 
+
 /*
 Background
 */
 
 .background {
     background-color: #99ddcc;
+    padding-bottom: 9em;
 }
+
 
 
 /*Cat Name list*/
 
-#catsNameList{
-  padding: 2.5em 0.5em 0.4em 0.5em;
-
+#catsNameList {
+    padding: 2.5em 0.5em 0.4em 0.5em;
 }
+
 ul {
     list-style-type: none;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 500;
+    text-align: right;
 }
-li:hover{
-    color:white;
+
+li:hover {
+    color: white;
     cursor: pointer;
 }
+
 
 /*Cats Name on the photo*/
 
 .catName {
-    font-size: 4em;
+    font-size: 2.5em;
     font-weight: 900;
-    color:#f6f6f6;
+    color: #f6f6f6;
     padding: 0 2em 0 2em 0;
     text-align: center;
 }
 
+
 /*cat image*/
 
-img{
-
-text-align: center;
-
+img {
+   /* width: 100%;
+    height: auto;*/
+      width: 250px;
+    height: 250px;
 }
-
 
 
 
@@ -77,4 +85,3 @@ text-align: center;
     font-size: 2em;
     font-weight: 700;
 }
-

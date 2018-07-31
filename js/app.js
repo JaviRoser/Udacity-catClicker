@@ -49,8 +49,6 @@ for (let i = 0; i < cats.attributes.length; i++) {
     let names = cats.attributes[i].name;
     let imgInput = cats.attributes[i].imgSrc;
     let list = document.createElement('li');
-
-    // let imgInput=` < src=${img} alt="${attr}">`;
     list.textContent = names;
     catNameList.appendChild(list);
     list.addEventListener('click', ((cat) => {
@@ -63,12 +61,9 @@ for (let i = 0; i < cats.attributes.length; i++) {
 
 
 let catImages = [...catImg];
-
-
 for (let img of catImg) {
     img.addEventListener("click", () => {
         clicked += 1;
-        // if (catImg)
         countClicks.innerText = "You clicked the cat " + clicked;
     });
 }
