@@ -44,6 +44,8 @@ let cats = {
 
 };
 
+/*The View:Display the cat name and image*/
+
 for (let i = 0; i < cats.attributes.length; i++) {
     let catNameList = document.getElementById('catsNameList');
     let names = cats.attributes[i].name;
@@ -55,15 +57,19 @@ for (let i = 0; i < cats.attributes.length; i++) {
         return () => {
             catsName.innerHTML = ` <p class="catsImgName">${cat}</p>
             <img class="cat" src="${imgInput}">`;
+
+            /*Counter: Count the number of clicks given in the picture*/
+
+            const catImages = [...catImg];
+            for (let img of catImg) {
+                img.addEventListener("click", () => {
+                    clicked += 1;
+                    countClicks.innerText = "You clicked the cat " + clicked;
+                    console.log('you clicked it');
+                });
+            }
+
         };
     })(names));
+
 };
-
-
-let catImages = [...catImg];
-for (let img of catImg) {
-    img.addEventListener("click", () => {
-        clicked += 1;
-        countClicks.innerText = "You clicked the cat " + clicked;
-    });
-}
